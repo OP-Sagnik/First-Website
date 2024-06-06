@@ -17,19 +17,19 @@ body {
     gap: 5px;
 }
 
-#Icons img{
+#Icons img {
     filter: invert(10);
 }
 
-#Exit{
+#Exit {
     padding: 2px;
     border-radius: 50%;
     background-color: white;
     margin-left: 50px;
-    cursor:pointer
+    cursor: pointer
 }
 
-#Follow{
+#Follow {
     margin-bottom: 5px;
     margin-right: 2px;
 }
@@ -64,21 +64,22 @@ nav {
     gap: 2px;
 }
 
-.hero-left h3{
+.hero-left h3 {
     font-size: 2.3rem;
 }
 
-.hero-left h3:nth-child(1) , .hero-left h3:nth-child(3){
+.hero-left h3:nth-child(1),
+.hero-left h3:nth-child(3) {
     color: #5ecff9;
 }
 
-.hero-left p{
+#element {
     font-size: 20px;
     margin-top: 20px;
     font-family: "Josefin Sans", sans-serif;
 }
 
-.hero-right{
+.hero-right {
     width: 50%;
     height: 100%;
     /* background-color: blue; */
@@ -87,8 +88,23 @@ nav {
     justify-content: center;
 }
 
-.hero-right img{
+.hero-right img {
     border: 2px solid white;
     border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
+
+.hero-right img:hover {
+    transform: scale(1.2);
+}
+
+.image {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.image.fade-in {
+    opacity: 1;
+}
